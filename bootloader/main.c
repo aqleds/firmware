@@ -27,6 +27,9 @@ typedef union tUnionReg32 {
 extern u32 read_pgm_latch(u16, u16);
 extern u32 write_pgm_latch(u16 addrH, u16 addrL, u16 dataH,
                                u16 dataL);
+extern u32 write_pgm_memory(u16);
+extern u32 erase_pgm_page(u16, u16, u16);
+
 void send_char(char);
 char recv_char();
 void send_buffer(char *, int);
@@ -161,7 +164,6 @@ char cmd_write_pgm_mem(int decryption)
 
 int main(void) {
 
-    r32_union src_addr;
     r32_union Delay;
 
     init();
@@ -195,7 +197,8 @@ int main(void) {
     /* set pin as input */
     TRISB |= 1 << 4;
 
-    PPSInput(PPS_U1RX, PPS_RP4); /* U1RX on RP4 */ 
+   // PPSInput(PPS_U1RX, PPS_RP4); /* U1RX on RP4 */
+    IN_FN_PPS_U1RX = IN_PIN_PPS_RP4;
 #endif
 
     RPOR1bits.RP3R=0b00011;/* UART TX = RP3 */

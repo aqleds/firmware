@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=16-bit Flash Programmer.X
+PROJECTNAME=bootloader.X
 
 # Active Configuration
 DEFAULTCONF=default

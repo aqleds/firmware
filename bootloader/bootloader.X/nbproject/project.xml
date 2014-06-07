@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>xteacbc-bootloader</name>
+            <name>aqleds-bootloader</name>
             <creation-uuid>4f3dfdfa-e687-4a1e-9db6-ec088d8f3cb2</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

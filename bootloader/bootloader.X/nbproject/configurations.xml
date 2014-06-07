@@ -40,7 +40,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>ICD3PlatformTool</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <languageToolchainVersion>1.21</languageToolchainVersion>
         <platform>4</platform>
       </toolsSet>
       <compileType>
@@ -66,7 +66,7 @@
         <property key="code-model" value="small-code"/>
         <property key="const-model" value="const-in-code"/>
         <property key="data-model" value="small-data"/>
-        <property key="enable-all-warnings" value="true"/>
+        <property key="enable-all-warnings" value="false"/>
         <property key="enable-ansi-std" value="false"/>
         <property key="enable-ansi-warnings" value="false"/>
         <property key="enable-fatal-warnings" value="false"/>
